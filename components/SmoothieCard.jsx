@@ -2,7 +2,7 @@
 
 import Link from 'next/link'
 import React, { useState } from 'react'
-import supabase from '../config/supabaseClient'
+import supabase from '../config/supabaseClient.js'
 
 const SmoothieCard = ({smoothie}) => {
 

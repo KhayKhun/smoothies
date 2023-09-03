@@ -1,9 +1,9 @@
 'use client'
 
 import Link from 'next/link'
-import supabase from '../config/supabaseClient'
+import supabase from '../config/supabaseClient.js'
 import { useEffect, useState } from 'react'
-import SmoothieCard from '../components/smoothieCard'
+import SmoothieCard from '../components/smoothieCard.jsx'
 export default function Home() {
   // console.log(supabase.authUrl)
   const [data,setData] = useState();
