@@ -3,7 +3,7 @@
 import Link from 'next/link'
 import supabase from '../config/supabaseClient.js'
 import { useEffect, useState } from 'react'
-import SmoothieCard from '../components/smoothieCard.jsx'
+import SmoothieCard from '../components/SmoothieCard.jsx'
 export default function Home() {
   // console.log(supabase.authUrl)
   const [data,setData] = useState();
