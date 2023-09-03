@@ -27,7 +27,7 @@ const SmoothieCard = ({smoothie}) => {
         <div className='flex flex-col gap-5'>
             <h1 className='font-bold text-2xl'>{smoothie.title}</h1>
             <p>{smoothie.method}</p>
-            <p>{smoothie.rating} Stars</p>
+            <p className='font-semibold text-amber-500'>{smoothie.rating} Stars</p>
         </div>
 
         <div className='w-full grid grid-cols-2 gap-3'>
