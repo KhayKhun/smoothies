@@ -4,6 +4,7 @@ import Link from 'next/link'
 import supabase from '../config/supabaseClient.js'
 import { useEffect, useState } from 'react'
 import SmoothieCard from '../components/SmoothieCard.jsx'
+
 export default function Home() {
   // console.log(supabase.authUrl)
   const [data,setData] = useState();
@@ -13,6 +14,7 @@ export default function Home() {
       const {data,error} = await supabase
       .from('smoothies')
       .select()
+      .order('rating',{ascending : false})
 
       if(error){
         console.log(error);
